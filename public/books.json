@@ -1,0 +1,146 @@
+[
+    {
+        "bookId": 2,
+        "bookName": "Annotated Texas Family Code 2029",
+        "author": "Texas Legislature",
+        "image": "https://i.ibb.co/Wc34SK7/annotated-texas-family-code-2029.png",
+        "review": "An invaluable resource for legal professionals and individuals alike, the Annotated Texas Family Code 2029 provides comprehensive annotations and insights into the intricacies of family law in Texas. With updated statutes and case law references, this book is essential for anyone navigating family legal matters.",
+        "totalPages": 1500,
+        "rating": 4.8,
+        "category": "Legal Reference",
+        "tags": [
+            "Family Law",
+            "Texas Law"
+        ],
+        "publisher": "Thomson Reuters",
+        "yearOfPublishing": 2029
+    },
+    {
+        "bookId": 3,
+        "bookName": "The Hate U Give",
+        "author": "Angie Thomas",
+        "image": "https://i.ibb.co/98CGWTZ/the-hate-you-give.png",
+        "review": "Angie Thomas's The Hate U Give is a powerful and gripping portrayal of race, identity, and activism. Through the eyes of Starr Carter, the novel tackles complex issues with honesty and empathy, making it a necessary read for discussions on social justice and inequality.",
+        "totalPages": 464,
+        "rating": 4.6,
+        "category": "Young Adult",
+        "tags": [
+            "Social Justice",
+            "Race Relations"
+        ],
+        "publisher": "Balzer + Bray",
+        "yearOfPublishing": 2017
+    },
+    {
+        "bookId": 4,
+        "bookName": "Loving Jesus More",
+        "author": "Phil Ryken",
+        "image": "https://i.ibb.co/GcR1pH7/loving-jesus-more.png",
+        "review": "Loving Jesus More is a transformative book that encourages readers to deepen their relationship with Christ. Phil Ryken's insightful reflections and practical guidance offer a fresh perspective on what it means to truly love and follow Jesus in our daily lives.",
+        "totalPages": 208,
+        "rating": 4.5,
+        "category": "Christian Living",
+        "tags": [
+            "Faith",
+            "Spirituality"
+        ],
+        "publisher": "Crossway",
+        "yearOfPublishing": 2014
+    },
+    {
+        "bookId": 5,
+        "bookName": "Cold Case Christianity",
+        "author": "J. Warner Wallace",
+        "image": "https://i.ibb.co/cQHbtw0/cold-case-chridtianity.png",
+        "review": "In Cold Case Christianity, J. Warner Wallace applies his detective skills to investigate the claims of Christianity. Through engaging storytelling and rigorous analysis, Wallace presents compelling evidence for the reliability of the Gospels, making this a must-read for skeptics and believers alike.",
+        "totalPages": 288,
+        "rating": 4.7,
+        "category": "Religion",
+        "tags": [
+            "Apologetics",
+            "Christianity"
+        ],
+        "publisher": "David C. Cook",
+        "yearOfPublishing": 2013
+    },
+    {
+        "bookId": 6,
+        "bookName": "Scholarship Monthly Planner",
+        "author": "Scholarship Experts",
+        "image": "https://i.ibb.co/XSfcN8w/scholarship-monthly-planner.png",
+        "review": "The Scholarship Monthly Planner is an indispensable tool for students pursuing scholarships. With helpful tips, deadlines, and organizational tools, this planner empowers students to stay on track and maximize their chances of securing financial aid for their education.",
+        "totalPages": 128,
+        "rating": 4.4,
+        "category": "Education",
+        "tags": [
+            "Scholarships",
+            "Student Resources"
+        ],
+        "publisher": "Independently Published",
+        "yearOfPublishing": 2023
+    },
+    {
+        "bookId": 7,
+        "bookName": "Spine of the Dragon",
+        "author": "Kevin J. Anderson",
+        "image": "https://i.ibb.co/4Tyh8sF/spine-of-the-dragon.png",
+        "review": "Spine of the Dragon is a thrilling epic fantasy that takes readers on an unforgettable journey through a world of magic and intrigue. Kevin J. Anderson's richly imagined universe and dynamic characters make this a captivating read for fans of the genre.",
+        "totalPages": 560,
+        "rating": 4.2,
+        "category": "Fantasy",
+        "tags": [
+            "Epic Fantasy",
+            "Magic"
+        ],
+        "publisher": "Tor Books",
+        "yearOfPublishing": 2019
+    },
+    {
+        "bookId": 8,
+        "bookName": "The Lost Art of Good Conversation",
+        "author": "Sakyong Mipham",
+        "image": "https://i.ibb.co/KNFDwck/the-lost-art-of-good-conversation.png",
+        "review": "In The Lost Art of Good Conversation, Sakyong Mipham offers valuable insights and practical techniques for fostering meaningful connections in our fast-paced world. With warmth and wisdom, Mipham reminds us of the importance of genuine communication and listening.",
+        "totalPages": 240,
+        "rating": 4.6,
+        "category": "Self-Help",
+        "tags": [
+            "Communication",
+            "Mindfulness"
+        ],
+        "publisher": "Harmony",
+        "yearOfPublishing": 2017
+    },
+    {
+        "bookId": 9,
+        "bookName": "Why Do You Hate Money",
+        "author": "Yanis Varoufakis",
+        "image": "https://i.ibb.co/99DwXYb/why-do-you-hate-money.png",
+        "review": "Why Do You Hate Money is a thought-provoking exploration of our relationship with money and the economic systems that shape our lives. Yanis Varoufakis challenges conventional wisdom and offers fresh perspectives on wealth, inequality, and the future of capitalism.",
+        "totalPages": 368,
+        "rating": 4.4,
+        "category": "Economics",
+        "tags": [
+            "Wealth",
+            "Capitalism"
+        ],
+        "publisher": "Zed Books",
+        "yearOfPublishing": 2021
+    },
+    {
+        "bookId": 10,
+        "bookName": "Dating Playbook for Men",
+        "author": "Andrew Ferebee",
+        "image": "https://i.ibb.co/kyCk0BT/dating-playbook-for-man.png",
+        "review": "The Dating Playbook for Men provides practical advice and strategies for men looking to improve their dating lives. Andrew Ferebee draws from personal experiences and psychological principles to offer actionable tips on building confidence, attracting partners, and cultivating meaningful relationships.",
+        "totalPages": 286,
+        "rating": 4.5,
+        "category": "Relationships",
+        "tags": [
+            "Dating",
+            "Self-Improvement"
+        ],
+        "publisher": "Knowledge for Men, Inc.",
+        "yearOfPublishing": 2015
+    }
+]
