@@ -1,4 +1,6 @@
 import React from 'react';
+import { FaRegStar } from "react-icons/fa";
+
 
 const BookCard = ({ book }) => {
 
@@ -6,7 +8,7 @@ const BookCard = ({ book }) => {
 
     return (
         <div>
-            <div className="card w-96 bg-base-50 hover:bg-base-200 shadow-xl border-gray-800">
+            <div className="card border border-base-300 bg-base-50 hover:bg-base-200 shadow-xl">
                 <figure className='p-4'><img src={image} alt={bookName} /></figure>
                 <div className="card-body space-y-2">
                     <ul className='flex justify-between'>
@@ -20,7 +22,7 @@ const BookCard = ({ book }) => {
                     <p>By : {author}</p>
                     <div className="flex justify-between ">
                         <p>{category}</p>
-                        <p>{rating}</p>
+                        <p className='flex gap-2 items-center text-center'><FaRegStar />{rating}</p>
                     </div>
                 </div>
             </div>
