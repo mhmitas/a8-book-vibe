@@ -16,9 +16,10 @@ const Navber = () => {
                     </div>
                     <a className="btn btn-ghost font-black text-xl">BookVerse</a>
                 </div>
-                <div className="navbar-center hidden lg:flex">
+                <div className="navbar-center hidden md:flex">
                     <ul className="menu menu-horizontal font-semibold px-1">
                         <li><NavLink to="/" className="">Home</NavLink></li>
+                        <li><NavLink to="/listedBooks" className="">Listed Books</NavLink></li>
                     </ul>
                 </div>
                 <div className="navbar-end gap-4">
