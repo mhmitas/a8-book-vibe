@@ -1,10 +1,10 @@
 import React from 'react';
-import Navber from '../components/header/Header';
 import { Outlet } from 'react-router-dom';
+import Navber from './header/Header';
 
 const Root = () => {
     return (
-        <div className='max-w-screen-2xl mx-auto'>
+        <div>
             <Navber></Navber>
             <Outlet></Outlet>
         </div>

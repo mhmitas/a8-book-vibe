@@ -1,29 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import Root from './routes/root'
-import Home from './components/home/Home'
-import BookDetails from './components/home/books/BookDetails'
-
-const router = createBrowserRouter([
-  {
-    path: "",
-    element: <Root></Root>,
-    children: [
-      {
-        path: "/",
-        element: <Home></Home>,
-        loader: () => fetch('books.json')
-      },
-      {
-        path: "/bookDetails/:booksId",
-        element: <BookDetails></BookDetails>,
-        loader: () => fetch("/books.json")
-      }
-    ]
-  }
-])
+import { RouterProvider } from 'react-router-dom';
+import { router } from './routes/Routes';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

@@ -7,5 +7,8 @@ export default {
   theme: {
     extend: {},
   },
+  daisyui: {
+    themes: ["synthwave", "dark", "cmyk"],
+  },
   plugins: [require("daisyui")],
 }
