@@ -5,12 +5,12 @@ import { getReadBooksFromLocalStorage } from '../../utils/local-storage';
 const ReadBooks = () => {
 
     const readBooks = getReadBooksFromLocalStorage()
-    // console.log(readBooks)
+    console.log(readBooks)
 
     return (
         <div className='flex flex-col gap-8'>
             {
-                books.map(book => <BooklistCard key={book.bookId} book={book}></BooklistCard>)
+                readBooks.map(book => <BooklistCard key={book.bookId} book={book}></BooklistCard>)
             }
         </div>
     );

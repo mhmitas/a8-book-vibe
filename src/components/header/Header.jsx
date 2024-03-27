@@ -12,6 +12,8 @@ const Navber = () => {
                         </div>
                         <ul tabIndex={0} className="menu font-semibold menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                             <li><NavLink to="/" className="">Home</NavLink></li>
+                            <li><NavLink to="/listedBooks" className="">Listed Books</NavLink></li>
+                            <li><NavLink to="/pages-to-read" className="">Pages to Read</NavLink></li>
                         </ul>
                     </div>
                     <a className="btn btn-ghost font-black text-xl">BookVerse</a>
@@ -20,11 +22,12 @@ const Navber = () => {
                     <ul className="menu menu-horizontal font-semibold px-1">
                         <li><NavLink to="/" className="">Home</NavLink></li>
                         <li><NavLink to="/listedBooks" className="">Listed Books</NavLink></li>
+                        <li><NavLink to="/pages-to-read" className="">Pages to Read</NavLink></li>
                     </ul>
                 </div>
                 <div className="navbar-end gap-4">
                     <Link className="btn btn-primary">Sign In</Link>
-                    <Link className="btn btn-primary">Sign Up</Link>
+                    <Link className="btn btn-secondary">Sign Up</Link>
                 </div>
             </div>
         </div>

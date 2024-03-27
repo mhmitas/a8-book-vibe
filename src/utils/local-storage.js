@@ -49,7 +49,7 @@ function setWishListBooksToLocalStorage(book) {
         // alert()
         toast.success('Added to wishlist')
     } else {
-        alert('This book is exists in wishlist')
+        toast.error('This book is exists in wishlist')
     }
     localStorage.setItem('wishList-books', JSON.stringify(books))
 }

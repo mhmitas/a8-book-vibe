@@ -19,7 +19,7 @@ const ListedBooks = () => {
                     </ul>
                 </div>
             </div>
-            <div role="tablist" class="tabs tabs-bordered my-8">
+            <div role="tablist" className="tabs tabs-bordered my-8">
                 <Link
                     onClick={() => setIndex(0)}
                     to=""
