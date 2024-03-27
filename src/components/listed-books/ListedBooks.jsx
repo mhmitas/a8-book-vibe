@@ -1,23 +1,34 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, NavLink, Outlet } from 'react-router-dom';
-import { RiArrowDropDownLine } from "react-icons/ri";
+import { getReadBooksFromLocalStorage } from '../../utils/local-storage';
 
 const ListedBooks = () => {
 
     const [index, setIndex] = useState(0)
 
+    // control short by-->
+    // load read books
+    const [books, setBooks] = useState([])
+    useEffect(() => {
+        const readBooks = getReadBooksFromLocalStorage()
+        setBooks(readBooks)
+    }, [])
+    console.log(books)
+
+
+    // ---------->>
+
+
     return (
         <div>
             <h1 className='text-3xl font-bold text-center mt-20 mb-10 bg-base-200 p-4'>Books</h1>
             <div className="text-center mt-20 mb-10 p-4">
-                <div className="dropdown dropdown-bottom">
-                    <div tabIndex={0} role="button" className="btn btn-primary m-1">< RiArrowDropDownLine className='text-3xl' />Short By</div>
-                    <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-200 rounded-box w-52">
-                        <li><a>Rating</a></li>
-                        <li><a>Number of pages</a></li>
-                        <li><a>Publisher year</a></li>
-                    </ul>
-                </div>
+                <select name="SortBy" className='p-3 bg-secondary text-base-100 font-semibold rounded-md' id="SortBy">
+                    <option value="Sort By">Sort By</option>
+                    <option value="Rating">Rating</option>
+                    <option value="Number of pages">Number of pages</option>
+                    <option value="Publisher year">Publisher year</option>
+                </select>
             </div>
             <div role="tablist" className="tabs tabs-bordered my-8">
                 <Link
