@@ -18,7 +18,7 @@ const ReadBooks = () => {
     return (
         <div className='flex flex-col gap-8'>
             <div className=" mt-20 mb-10 p-4">
-                <select onChange={handleSort} name="SortBy" className='p-3 bg-error text-base-100 font-semibold rounded-md' id="SortBy">
+                <select onChange={handleSort} name="SortBy" className='p-3 bg-secondary text-base-100 font-semibold rounded-md' id="SortBy">
                     <option>Sort By</option>
                     <option value="rating">Rating</option>
                     <option value="totalPages">Number of pages</option>

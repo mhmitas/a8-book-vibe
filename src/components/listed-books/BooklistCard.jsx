@@ -17,7 +17,7 @@ const BooklistCard = ({ book }) => {
                         <h3>Tag</h3>
                         {tags.map((tag, idx) => <li className='badge badge-primary badge-outline' key={idx}>{tag}</li>)}
                     </ul>
-                    <div className='flex items-center gap-1'><IoMdTime /> Year of Publishing{yearOfPublishing}</div>
+                    <div className='flex items-center gap-1'><IoMdTime /> Year of Publishing: {yearOfPublishing}</div>
                 </div>
                 <div className='flex gap-16 items-center'>
                     <div>Publisher : {publisher}</div>
