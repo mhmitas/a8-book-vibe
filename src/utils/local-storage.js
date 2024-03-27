@@ -1,3 +1,5 @@
+import toast from "react-hot-toast";
+
 function getReadBooksFromLocalStorage() {
     let items = [];
     const savedItems = localStorage.getItem('read-books')
@@ -13,9 +15,9 @@ function setItemsToLocalStorage(book) {
     const exists = books.find(B => B.bookId === book.bookId)
     if (!exists) {
         books.push(book)
-        alert('Added to read books list')
+        toast.success('Added to read books list')
     } else {
-        alert('This book is exists in read books list')
+        toast.error(' You have already read this book')
     }
     localStorage.setItem('read-books', JSON.stringify(books))
 }
@@ -37,13 +39,15 @@ function setWishListBooksToLocalStorage(book) {
     const readBooks = getReadBooksFromLocalStorage()
     const isRead = readBooks.find(b => b.bookId === book.bookId)
     if (isRead) {
-        alert('You have already read this book')
-        return
+        // alert('')
+        toast.error('You have already read this book')
+        return;
     }
     const exists = books.find(B => B.bookId === book.bookId)
     if (!exists) {
         books.push(book)
-        alert('Added to wishlist')
+        // alert()
+        toast.success('Added to wishlist')
     } else {
         alert('This book is exists in wishlist')
     }

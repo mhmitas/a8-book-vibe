@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import BooklistCard from './BooklistCard';
 import { getReadBooksFromLocalStorage } from '../../utils/local-storage';
 
@@ -10,7 +10,7 @@ const ReadBooks = () => {
     return (
         <div className='flex flex-col gap-8'>
             {
-                readBooks.map(book => <BooklistCard key={book.bookId} book={book}></BooklistCard>)
+                books.map(book => <BooklistCard key={book.bookId} book={book}></BooklistCard>)
             }
         </div>
     );

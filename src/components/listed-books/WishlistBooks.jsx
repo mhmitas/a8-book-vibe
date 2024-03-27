@@ -1,9 +1,15 @@
 import React from 'react';
+import { getWishListBooksFromLocalStorage } from '../../utils/local-storage';
+import BooklistCard from './BooklistCard';
 
 const WishlistBooks = () => {
+    const wishlist = getWishListBooksFromLocalStorage()
+    console.log(wishlist)
     return (
         <div>
-            <h3 className='text-3xl'>Wishlist books</h3>
+            {
+                wishlist.map(book => <BooklistCard key={book.bookId} book={book}></BooklistCard>)
+            }
         </div>
     );
 };
