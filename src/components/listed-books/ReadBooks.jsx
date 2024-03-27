@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import BooklistCard from './BooklistCard';
 import { getReadBooksFromLocalStorage } from '../../utils/local-storage';
-import { sortByDesendingOrder } from '../../utils/sortByDecendingOrder';
 
 const ReadBooks = () => {
     const [books, setBooks] = useState([])
@@ -11,18 +10,21 @@ const ReadBooks = () => {
     }, [])
 
 
-    // const handleSort = (param) => {
-    //     const readBooks = [...books]
-    //     console.log(readBooks)
-    //     readBooks.sort((a, b) => b[`${param}`] - a[`${param}`])
-    //     setBooks(readBooks)
-    // }
-
-
-
+    const handleSort = (e) => {
+        const readBooks = [...books]
+        readBooks.sort((a, b) => b[`${e.target.value}`] - a[`${e.target.value}`])
+        setBooks(readBooks)
+    }
     return (
         <div className='flex flex-col gap-8'>
-            {/* <button onClick={() => handleSort('rating')} className='btn'>sort</button> */}
+            <div className=" mt-20 mb-10 p-4">
+                <select onChange={handleSort} name="SortBy" className='p-3 bg-error text-base-100 font-semibold rounded-md' id="SortBy">
+                    <option>Sort By</option>
+                    <option value="rating">Rating</option>
+                    <option value="totalPages">Number of pages</option>
+                    <option value="yearOfPublishing">Publisher year</option>
+                </select>
+            </div>
             {
                 books.map(book => <BooklistCard key={book.bookId} book={book}></BooklistCard>)
             }

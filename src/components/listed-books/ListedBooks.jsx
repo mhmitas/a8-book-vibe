@@ -1,22 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import { Link, NavLink, Outlet } from 'react-router-dom';
-import { getReadBooksFromLocalStorage } from '../../utils/local-storage';
+import { useState } from 'react';
+import { Link, Outlet } from 'react-router-dom';
 
 const ListedBooks = () => {
 
     const [index, setIndex] = useState(0)
 
-    // control short by-->
-    // load read books
-    const [books, setBooks] = useState([])
-    useEffect(() => {
-        const readBooks = getReadBooksFromLocalStorage()
-        setBooks(readBooks)
-    }, [])
-    console.log(books)
-
-
-    // ---------->>
 
 
     return (
