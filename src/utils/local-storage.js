@@ -54,4 +54,30 @@ function setWishListBooksToLocalStorage(book) {
     localStorage.setItem('wishList-books', JSON.stringify(books))
 }
 
-export { setItemsToLocalStorage, getReadBooksFromLocalStorage, setWishListBooksToLocalStorage, getWishListBooksFromLocalStorage }
+//--------------->>>
+function getUserDataFromLs() {
+    let user = {}
+    const savedUser = localStorage.getItem('user')
+    if (savedUser) {
+        user = JSON.parse(savedUser)
+    }
+    return user
+}
+
+function setUserDataToLs(key, value) {
+    const userData = getUserDataFromLs();
+    userData[`${key}`] = value;
+    localStorage.setItem('user', JSON.stringify(userData))
+}
+
+
+
+
+
+
+
+
+
+
+
+export { setItemsToLocalStorage, getReadBooksFromLocalStorage, setWishListBooksToLocalStorage, getWishListBooksFromLocalStorage, getUserDataFromLs, setUserDataToLs }

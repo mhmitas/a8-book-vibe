@@ -1,6 +1,9 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { setUserDataToLs } from '../../utils/local-storage';
 
 const SignIn = () => {
+    // const { isSignin, setIsSignin } = useContext(CheckSignIn)
+    const [isSignin, setIsSignin] = useState(false)
 
     const [email, setEmail] = useState()
     const [username, setUsername] = useState()
@@ -8,18 +11,38 @@ const SignIn = () => {
 
     function handleSignIn(e) {
         e.preventDefault();
-        console.log(email)
-        console.log(username)
-        console.log(password)
+        setUserDataToLs('email', email)
+        setUserDataToLs('username', username)
+        setUserDataToLs('password', password)
+        setIsSignin(true)
     }
+    // updating data input on each state,
     function handleEmail(e) {
         setEmail(e.target.value)
+
     }
     function handleUsername(e) {
         setUsername(e.target.value)
     }
     function handlePassword(e) {
         setPassword(e.target.value)
+    }
+
+    const [userData, setUserData] = useState({})
+    useEffect(() => {
+        const getUserData = localStorage.getItem('user')
+        setUserData(JSON.parse(getUserData))
+    }, [])
+
+    if (isSignin && userData) {
+        return (
+            <div>
+                <h3>Profile</h3>
+                <p>UserName: {userData.username}</p>
+                <p>Email: {userData.email}</p>
+                <button className='btn'>Log Out</button>
+            </div>
+        )
     }
 
     return (
@@ -32,6 +55,7 @@ const SignIn = () => {
                             onChange={handleEmail}
                             className="input input-bordered grow flex w-80 items-center gap-2"
                             type="email"
+                            name="email"
                             required
                             placeholder="Email"
                         />
