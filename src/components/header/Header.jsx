@@ -4,7 +4,7 @@ import { Link, NavLink } from 'react-router-dom';
 const Navber = () => {
     return (
         <div>
-            <div className="navbar bg-base-200 shadow-xl p-4 text-white mb-6">
+            <div className="navbar bg-base-200 shadow-xl p-4 mb-6">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -16,7 +16,7 @@ const Navber = () => {
                             <li><NavLink to="/pages-to-read" className="">Pages to Read</NavLink></li>
                         </ul>
                     </div>
-                    <a className="btn btn-ghost font-black text-xl">BookVerse</a>
+                    <a className="btn btn-ghost font-black text-xl">eBookVerse</a>
                 </div>
                 <div className="navbar-center hidden md:flex">
                     <ul className="menu menu-horizontal font-semibold px-1">
@@ -26,8 +26,8 @@ const Navber = () => {
                     </ul>
                 </div>
                 <div className="navbar-end gap-4">
-                    <Link className="btn btn-primary">Sign In</Link>
-                    <Link className="btn btn-secondary">Sign Up</Link>
+                    <NavLink to="/sign-in" className="btn btn-primary">Sign In</NavLink>
+                    <Link to="/sign-up" className="btn btn-secondary">Sign Up</Link>
                 </div>
             </div>
         </div>

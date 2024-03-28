@@ -8,7 +8,7 @@ const BookCard = ({ book }) => {
     return (
         <div>
             <Link to={`/bookDetails/${bookId}`}>
-                <div className="card border border-base-300 bg-base-50 hover:bg-base-200 shadow-xl">
+                <div className="card border border-base-300 hover:scale-105 hover:border-primary hover:bg-base-200 shadow-xl">
                     <figure className='p-4'><img src={image} alt={bookName} /></figure>
                     <div className="card-body space-y-2">
                         <ul className='flex justify-between'>
